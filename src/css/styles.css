@@ -980,3 +980,113 @@ img {
         font-size: 2.5rem;
     }
 }
+/* --- Legal Pages Styles --- */
+
+.legal-page {
+    padding-top: 120px;
+    /* Отступ под шапку */
+    padding-bottom: 80px;
+    background: #0b0f19;
+    /* Темный фон сайта */
+}
+
+.container--narrow {
+    max-width: 800px;
+    /* Ограничиваем ширину для удобства чтения */
+}
+
+.pages__title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.pages__content {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.pages__content h2 {
+    color: #fff;
+    margin: 2.5rem 0 1rem;
+    font-size: 1.8rem;
+}
+
+.pages__content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Карточки и акценты */
+.pages__card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.warning-box {
+    border-left: 4px solid #a855f7;
+    /* Ваш фиолетовый акцент */
+    background: rgba(168, 85, 247, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0 12px 12px 0;
+    color: #fff;
+}
+
+/* Списки */
+.pages__list {
+    margin: 1.5rem 0;
+    padding-left: 1.2rem;
+}
+
+.pages__list li {
+    margin-bottom: 1rem;
+    position: relative;
+    list-style: none;
+}
+
+.pages__list li::before {
+    content: "—";
+    position: absolute;
+    left: -1.2rem;
+    color: #a855f7;
+}
+
+/* Ссылки */
+.link-glow {
+    color: #a855f7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.link-glow:hover {
+    color: #fff;
+    border-bottom-color: #fff;
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Mobile Adaptation */
+@media (max-width: 768px) {
+    .legal-page {
+        padding-top: 100px;
+    }
+
+    .pages__title {
+        text-align: center;
+    }
+
+    .pages__card {
+        padding: 1.5rem;
+    }
+}
